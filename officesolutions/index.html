@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+<meta http-equiv="content-language" content="en-us">
+
+<head>
+  <title>OfficeSolutions</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+<div class="preloader" id="preloader-id">
+  <div class="spinner">
+      </div>
+</div>
+<div id="navbar">
+
+<a class="button logout button--ghost button--ghost--green" id="logout" href="#"><b>Logout</b></a>
+<a class="button  button--ghost button--ghost--green" id="login" href="http://ayuthika.com/officesolutions/login.html"><b>Login</b></a>
+<a class="button  button--ghost button--ghost--green" id="register" href="http://ayuthika.com/officesolutions/register.html"><b>Register</b></a>
+</div>
+</body>
+</html>
+  <div class='login'id="pagecontent" style='display:none'>
+    <div class="container" id="main">
+
+      <div class="clearfix"></div>
+      <h1 style="color:#eeeeee;text-align: center;">Insights</h1>
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Insights for Most Profitable States
+            </a>
+          </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+            <div id="panel-one-graph"> </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+              Insights for Most Profitable Products
+            </a>
+          </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
+
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingThree">
+            <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+              Insight for Most Returned Products
+            </a>
+          </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingThree">
+            <div class="panel-body">
+
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingFour">
+            <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+              Customer Specific Insights
+            </a>
+          </h4>
+          </div>
+          <div id="collapseFour" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingFour">
+            <div class="panel-body">
+              <div id="left" >
+                <h4>  One-Time Regular Customers</h4>
+                <div id="left-table"></div></div>
+
+              <div id="right">
+<h4> One-Time Customers</h4>
+                <div id="right-table"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="notLoggedIn">
+<h1 style="color:#eeeeee;text-align: center;">Please Login to View Insights</h1>
+    </div>
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
+  integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script>
+
+    $(window).on('load',function() {
+         $('#preloader-id').hide();
+         $('#pagecontent').show();
+    });
+
+
+</script>
+  <script src="index.js"></script>
+
+</body>
+
+</html>
