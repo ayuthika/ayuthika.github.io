@@ -2,7 +2,7 @@ $(document).ready(function() {
 $('#logout').on('click',function(){
 
   Cookies.set('isLoggedIn','false')
-  window.location="http://localhost/officesolutions/login.html";
+  window.location="http://ayuthika.com/officesolutions/login.html";
 });
 
 $('#notLoggedIn').hide();
