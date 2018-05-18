@@ -31,6 +31,8 @@ $('#notLoggedIn').hide();
     data=JSON.parse(data)
     console.log(data)
     populateData(data)
+    $('#preloader-id').hide();
+    $('#pagecontent').show();
   },
   error: function(jqXHR,textStatus,errorThrown){}
 });
